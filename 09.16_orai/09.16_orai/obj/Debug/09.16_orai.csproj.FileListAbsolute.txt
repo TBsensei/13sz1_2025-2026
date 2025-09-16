@@ -1,0 +1,7 @@
+C:\Users\toth.balazs\source\repos\09.16_orai\09.16_orai\bin\Debug\09.16_orai.exe.config
+C:\Users\toth.balazs\source\repos\09.16_orai\09.16_orai\bin\Debug\09.16_orai.exe
+C:\Users\toth.balazs\source\repos\09.16_orai\09.16_orai\bin\Debug\09.16_orai.pdb
+C:\Users\toth.balazs\source\repos\09.16_orai\09.16_orai\obj\Debug\09.16_orai.csproj.AssemblyReference.cache
+C:\Users\toth.balazs\source\repos\09.16_orai\09.16_orai\obj\Debug\09.16_orai.csproj.CoreCompileInputs.cache
+C:\Users\toth.balazs\source\repos\09.16_orai\09.16_orai\obj\Debug\09.16_orai.exe
+C:\Users\toth.balazs\source\repos\09.16_orai\09.16_orai\obj\Debug\09.16_orai.pdb

@@ -1,7 +1,7 @@
 # StudentScheduler - Diák Időbeosztás Szervező
 
 ## Leírás
-Egy Windows Forms alkalmazás, amely segít a tanulmányi feladatok, 
+Egy c# WPF alkalmazás, amely segít a tanulmányi feladatok, 
 órarend és határidők kezelésében. Háromféle szerepkörrel rendelkezik:
 Admin, Tanár és Diák.
 

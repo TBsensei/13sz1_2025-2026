@@ -1,7 +1,0 @@
-C:\Suli\C#\C_Sharp\09_11_2025_orai\09_11_2025_orai\bin\Debug\09_11_2025_orai.exe.config
-C:\Suli\C#\C_Sharp\09_11_2025_orai\09_11_2025_orai\bin\Debug\09_11_2025_orai.exe
-C:\Suli\C#\C_Sharp\09_11_2025_orai\09_11_2025_orai\bin\Debug\09_11_2025_orai.pdb
-C:\Suli\C#\C_Sharp\09_11_2025_orai\09_11_2025_orai\obj\Debug\09_11_2025_orai.csproj.AssemblyReference.cache
-C:\Suli\C#\C_Sharp\09_11_2025_orai\09_11_2025_orai\obj\Debug\09_11_2025_orai.csproj.CoreCompileInputs.cache
-C:\Suli\C#\C_Sharp\09_11_2025_orai\09_11_2025_orai\obj\Debug\09_11_2025_orai.exe
-C:\Suli\C#\C_Sharp\09_11_2025_orai\09_11_2025_orai\obj\Debug\09_11_2025_orai.pdb

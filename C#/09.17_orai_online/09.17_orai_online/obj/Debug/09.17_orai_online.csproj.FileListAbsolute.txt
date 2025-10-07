@@ -1,0 +1,7 @@
+C:\Suli\C#\C_Sharp\09.17_orai_online\09.17_orai_online\bin\Debug\09.17_orai_online.exe.config
+C:\Suli\C#\C_Sharp\09.17_orai_online\09.17_orai_online\bin\Debug\09.17_orai_online.exe
+C:\Suli\C#\C_Sharp\09.17_orai_online\09.17_orai_online\bin\Debug\09.17_orai_online.pdb
+C:\Suli\C#\C_Sharp\09.17_orai_online\09.17_orai_online\obj\Debug\09.17_orai_online.csproj.AssemblyReference.cache
+C:\Suli\C#\C_Sharp\09.17_orai_online\09.17_orai_online\obj\Debug\09.17_orai_online.csproj.CoreCompileInputs.cache
+C:\Suli\C#\C_Sharp\09.17_orai_online\09.17_orai_online\obj\Debug\09.17_orai_online.exe
+C:\Suli\C#\C_Sharp\09.17_orai_online\09.17_orai_online\obj\Debug\09.17_orai_online.pdb

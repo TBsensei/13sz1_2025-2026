@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <main class="card" role="application" aria-label="Jegyfoglalás tartás">
+        <h1 style="margin: 0;">Jegyfoglalás tartás</h1>
+        <p class="muted"  style="margin-top: -6px;">A rendszer 2 percig tartja a jegyeidet. A visszaszámlálót
+            bármenyusszer meghszabbíthatod +30mp-vel</p>
+        <div class="timer" id="timer" aria-live="polite">02:00</div>
+        <div class="actions" aria-label="Műveletek">
+            <button  id="extendBtn" title="Haszabbítás (E)">Meghosszabbítás +30mp</button>
+            <button id="cancelBtn" title="Mégse (Esc)">Mégse</button>
+        </div>
+        <div class="status" id="status" aria-live="polite"></div>
+        <p class="muted" style="margin: 0;">Billentyűparancs <kbd>E</kbd> = hosszabítás, <kbd>Esc</kbd> = mégse</p>
+        <div class="toast" id="toast" role="status" aria-live="polite">A foglalás fut a háttérben is..</div>
+    </main>
+
+</body>
+
+</html>

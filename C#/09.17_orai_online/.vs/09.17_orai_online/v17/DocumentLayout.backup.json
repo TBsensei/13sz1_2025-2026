@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Suli\\C#\\C_Sharp\\09.17_orai_online\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5595DB30-A39C-475A-8519-A1010E087F23}|09.17_orai_online\\09.17_orai_online.csproj|c:\\suli\\c#\\c_sharp\\09.17_orai_online\\09.17_orai_online\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5595DB30-A39C-475A-8519-A1010E087F23}|09.17_orai_online\\09.17_orai_online.csproj|solutionrelative:09.17_orai_online\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Suli\\C#\\C_Sharp\\09.17_orai_online\\09.17_orai_online\\Program.cs",
+              "RelativeDocumentMoniker": "09.17_orai_online\\Program.cs",
+              "ToolTip": "C:\\Suli\\C#\\C_Sharp\\09.17_orai_online\\09.17_orai_online\\Program.cs",
+              "RelativeToolTip": "09.17_orai_online\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8EAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T08:38:54.247Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

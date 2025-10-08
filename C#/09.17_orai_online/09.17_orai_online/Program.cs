@@ -652,38 +652,575 @@ namespace _09._17_orai_online
 
             Console.WriteLine("A " + a + " és " + b + " legkisebb közös többszöröse: " + lkt);
         }
+        static void f32()
+        {
+            int n = EgeszSzamBeker("Add meg a szorzótábla méretét: ");
+            Console.WriteLine($"Szorzótábla {n} alapú:");
+
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j <= n; j++)
+                {
+                    Console.Write($"{i * j,4}");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void f33()
+        {
+            int n = EgeszSzamBeker("Add meg az összegtábla méretét: ");
+            Console.WriteLine($"Összegtábla {n} alapú:");
+
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j <= n; j++)
+                {
+                    Console.Write($"{i + j,4}");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void f34()
+        {
+            Console.WriteLine("Kétjegyű számpárok, ahol a szorzat nem változik a számjegyek felcserélésével:");
+
+            for (int x = 10; x <= 99; x++)
+            {
+                for (int y = x + 1; y <= 99; y++)
+                {
+                    int x1 = x / 10;
+                    int x2 = x % 10;
+                    int y1 = y / 10;
+                    int y2 = y % 10;
+
+                    int x_ford = x2 * 10 + x1;
+                    int y_ford = y2 * 10 + y1;
+
+                    if (x * y == x_ford * y_ford)
+                    {
+                        Console.WriteLine($"{x} és {y} (mert {x}*{y} = {x * y} és {x_ford}*{y_ford} = {x_ford * y_ford})");
+                    }
+                }
+            }
+        }
+
+        static void f35()
+        {
+            int maxSor = 10;
+            int osszesBetu = 26;
+            int oszlopok = (osszesBetu + maxSor - 1) / maxSor;
+
+            for (int sor = 0; sor < maxSor; sor++)
+            {
+                for (int oszlop = 0; oszlop < oszlopok; oszlop++)
+                {
+                    int index = sor + oszlop * maxSor;
+                    if (index < osszesBetu)
+                    {
+                        char betu = (char)('a' + index);
+                        Console.Write($"{betu}  {((int)betu),-3}  ");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void f36()
+        {
+            int sorok = EgeszSzamBeker("Add meg a sorok számát: ");
+            int oszlopok = EgeszSzamBeker("Add meg az oszlopok számát: ");
+
+            for (int i = 0; i < sorok; i++)
+            {
+                for (int j = 0; j < oszlopok; j++)
+                {
+                    if ((i + j) % 2 == 0)
+                        Console.Write("X");
+                    else
+                        Console.Write("O");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void f37()
+        {
+            int a = EgeszSzamBeker("Add meg a háromszög magasságát: ");
+
+            for (int i = 1; i <= a; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void f38()
+        {
+            int a = EgeszSzamBeker("Add meg a háromszög magasságát: ");
+
+            for (int i = 1; i <= a; i++)
+            {
+                for (int j = 1; j <= a - i; j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 1; j <= 2 * i - 1; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void f39()
+        {
+            int M = EgeszSzamBeker("Add meg a téglalap magasságát (M): ");
+            int N = EgeszSzamBeker("Add meg a téglalap szélességét (N): ");
+
+            for (int i = 1; i <= M; i++)
+            {
+                for (int j = 1; j <= N; j++)
+                {
+                    if (i == 1 || i == M || j == 1 || j == N)
+                        Console.Write("*");
+                    else
+                        Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void f40()
+        {
+            int limit = EgeszSzamBeker("Add meg a felső határt: ");
+
+            Console.WriteLine($"Tökéletes számok 1-től {limit}-ig:");
+
+            for (int szam = 1; szam <= limit; szam++)
+            {
+                int osszeg = 0;
+                for (int i = 1; i <= szam / 2; i++)
+                {
+                    if (szam % i == 0)
+                    {
+                        osszeg += i;
+                    }
+                }
+
+                if (osszeg == szam && szam > 0)
+                {
+                    Console.Write(szam + " ");
+                }
+            }
+            Console.WriteLine();
+        }
+
+        static void f41()
+        {
+            Console.WriteLine("Vigenère-tábla:");
+
+            for (int i = 0; i < 26; i++)
+            {
+                for (int j = 0; j < 26; j++)
+                {
+                    char betu = (char)('A' + (i + j) % 26);
+                    Console.Write(betu);
+                }
+                Console.WriteLine();
+            }
+        }
+        static void f42()
+        {
+            int n = EgeszSzamBeker("Add meg a számok darabszámát: ");
+            if (n <= 0)
+            {
+                Console.WriteLine("A darabszám nem lehet 0 vagy negatív!");
+                return;
+            }
+
+            int[] szamok = new int[n];
+            int paratlanDb = 0;
+
+            Console.WriteLine($"Olvass be {n} számot:");
+            for (int i = 0; i < n; i++)
+            {
+                szamok[i] = EgeszSzamBeker($"{i + 1}. szám: ");
+                if (szamok[i] % 2 != 0)
+                {
+                    paratlanDb++;
+                }
+            }
+
+            Console.WriteLine($"A páratlan számok darabszáma: {paratlanDb}");
+        }
+
+        static void f43()
+        {
+            int n = EgeszSzamBeker("Add meg a számok darabszámát: ");
+            if (n <= 0)
+            {
+                Console.WriteLine("A darabszám nem lehet 0 vagy negatív!");
+                return;
+            }
+
+            int[] szamok = new int[n];
+            int parosOsszeg = 0;
+
+            Console.WriteLine($"Olvass be {n} számot:");
+            for (int i = 0; i < n; i++)
+            {
+                szamok[i] = EgeszSzamBeker($"{i + 1}. szám: ");
+                if (szamok[i] % 2 == 0)
+                {
+                    parosOsszeg += szamok[i];
+                }
+            }
+
+            Console.WriteLine($"A páros számok összege: {parosOsszeg}");
+        }
+
+        static void f44()
+        {
+            int n = EgeszSzamBeker("Add meg a számok darabszámát: ");
+            if (n <= 0)
+            {
+                Console.WriteLine("A darabszám nem lehet 0 vagy negatív!");
+                return;
+            }
+
+            int[] szamok = new int[n];
+
+            Console.WriteLine($"Olvass be {n} számot:");
+            for (int i = 0; i < n; i++)
+            {
+                szamok[i] = EgeszSzamBeker($"{i + 1}. szám: ");
+            }
+
+            Console.WriteLine("Páros számok a beolvasás sorrendjében:");
+            for (int i = 0; i < n; i++)
+            {
+                if (szamok[i] % 2 == 0)
+                {
+                    Console.WriteLine($"{i + 1}. szám: {szamok[i]}");
+                }
+            }
+        }
+
+        static void f45()
+        {
+            int n = EgeszSzamBeker("Add meg a számok darabszámát: ");
+            if (n <= 0)
+            {
+                Console.WriteLine("A darabszám nem lehet 0 vagy negatív!");
+                return;
+            }
+
+            int[] szamok = new int[n];
+
+            Console.WriteLine($"Olvass be {n} számot:");
+            for (int i = 0; i < n; i++)
+            {
+                szamok[i] = EgeszSzamBeker($"{i + 1}. szám: ");
+            }
+
+            int keresett = EgeszSzamBeker("Add meg a keresett számot: ");
+            int index = -1;
+
+            for (int i = 0; i < n; i++)
+            {
+                if (szamok[i] == keresett)
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index != -1)
+            {
+                Console.WriteLine($"A(z) {keresett} szám előfordul a tömbben, indexe: {index}");
+            }
+            else
+            {
+                Console.WriteLine($"A(z) {keresett} szám nem található a tömbben.");
+            }
+        }
+
+        static void f46()
+        {
+            int n = EgeszSzamBeker("Add meg a számok darabszámát: ");
+            if (n <= 0)
+            {
+                Console.WriteLine("A darabszám nem lehet 0 vagy negatív!");
+                return;
+            }
+
+            int[] szamok = new int[n];
+
+            Console.WriteLine($"Olvass be {n} számot:");
+            for (int i = 0; i < n; i++)
+            {
+                szamok[i] = EgeszSzamBeker($"{i + 1}. szám: ");
+            }
+
+            int keresett = EgeszSzamBeker("Add meg a keresett számot: ");
+            int db = 0;
+
+            for (int i = 0; i < n; i++)
+            {
+                if (szamok[i] == keresett)
+                {
+                    db++;
+                }
+            }
+
+            Console.WriteLine($"A(z) {keresett} szám {db} alkalommal fordul elő a tömbben.");
+        }
+
+        static void f47()
+        {
+            int n = EgeszSzamBeker("Add meg a tanulók számát: ");
+            if (n <= 0)
+            {
+                Console.WriteLine("A tanulók száma nem lehet 0 vagy negatív!");
+                return;
+            }
+
+            string[] nevek = new string[n];
+
+            Console.WriteLine($"Olvass be {n} nevet:");
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write($"{i + 1}. név: ");
+                nevek[i] = Console.ReadLine();
+            }
+
+            Console.Write("Add meg a keresett nevet: ");
+            string keresettNev = Console.ReadLine();
+            int db = 0;
+
+            for (int i = 0; i < n; i++)
+            {
+                if (nevek[i].Equals(keresettNev, StringComparison.OrdinalIgnoreCase))
+                {
+                    db++;
+                }
+            }
+
+            Console.WriteLine($"A(z) '{keresettNev}' név {db} alkalommal fordul elő az osztályban.");
+        }
+
+        static void f48()
+        {
+            int n = EgeszSzamBeker("Add meg a számok darabszámát: ");
+            if (n <= 0)
+            {
+                Console.WriteLine("A darabszám nem lehet 0 vagy negatív!");
+                return;
+            }
+
+            int[] szamok = new int[n];
+
+            Console.WriteLine($"Olvass be {n} számot:");
+            for (int i = 0; i < n; i++)
+            {
+                szamok[i] = EgeszSzamBeker($"{i + 1}. szám: ");
+            }
+
+            if (n == 1)
+            {
+                Console.WriteLine("Csak egy szám van, a különbség 0.");
+                return;
+            }
+
+            int min = szamok[0];
+            int max = szamok[0];
+
+            for (int i = 1; i < n; i++)
+            {
+                if (szamok[i] < min)
+                    min = szamok[i];
+                if (szamok[i] > max)
+                    max = szamok[i];
+            }
+
+            int kulonbseg = max - min;
+            Console.WriteLine($"A legkisebb szám: {min}");
+            Console.WriteLine($"A legnagyobb szám: {max}");
+            Console.WriteLine($"A különbség: {kulonbseg}");
+        }
+
+        static void f49()
+        {
+            int n = EgeszSzamBeker("Add meg a számok darabszámát: ");
+            if (n <= 0)
+            {
+                Console.WriteLine("A darabszám nem lehet 0 vagy negatív!");
+                return;
+            }
+
+            int[] szamok = new int[n];
+
+            Console.WriteLine($"Olvass be {n} számot:");
+            for (int i = 0; i < n; i++)
+            {
+                szamok[i] = EgeszSzamBeker($"{i + 1}. szám: ");
+            }
+
+            for (int i = n - 1; i >= 1; i--)
+            {
+                for (int j = 0; j <= i - 1; j++)
+                {
+                    if (szamok[j] > szamok[j + 1])
+                    {
+                        int temp = szamok[j];
+                        szamok[j] = szamok[j + 1];
+                        szamok[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("A számok növekvő sorrendben:");
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(szamok[i]);
+                if (i < n - 1)
+                    Console.Write(" ");
+            }
+            Console.WriteLine();
+        }
+        static void f50()
+        {
+            string szo = SzovegBeker("Adj meg egy szót: ");
+            Console.Write("A szó betűi: ");
+            for (int i = 0; i < szo.Length; i++)
+            {
+                Console.Write(szo[i]);
+                if (i < szo.Length - 1)
+                    Console.Write(" ");
+            }
+            Console.WriteLine();
+        }
+
+        static void f51()
+        {
+            string szo = SzovegBeker("Adj meg egy szót: ");
+            string tabuBetu = SzovegBeker("Add meg a tabu betűt: ");
+
+            if (tabuBetu.Length == 0)
+            {
+                Console.WriteLine("Nem adtál meg tabu betűt!");
+                return;
+            }
+
+            char tabu = tabuBetu[0];
+            Console.Write("A szó a tabu betű nélkül: ");
+
+            for (int i = 0; i < szo.Length; i++)
+            {
+                if (szo[i] != tabu)
+                    Console.Write(szo[i]);
+            }
+            Console.WriteLine();
+        }
+
+        static void f52()
+        {
+            string szo = SzovegBeker("Adj meg egy szót: ");
+            Console.WriteLine("Minden második betű:");
+
+            for (int i = 1; i < szo.Length; i += 2)
+            {
+                Console.WriteLine(szo[i]);
+            }
+        }
+
+        static void f53()
+        {
+            string szo = SzovegBeker("Adj meg egy szót: ");
+            Console.WriteLine("A szó karaktereinek ASCII kódjai:");
+
+            for (int i = 0; i < szo.Length; i++)
+            {
+                Console.WriteLine($"{szo[i]} -> {(int)szo[i]}");
+            }
+        }
+
+        static void f54()
+        {
+            string szo = SzovegBeker("Adj meg egy szót: ");
+            Console.Write("A szó fordítva: ");
+
+            for (int i = szo.Length - 1; i >= 0; i--)
+            {
+                Console.Write(szo[i]);
+            }
+            Console.WriteLine();
+        }
+
+        static void f55()
+        {
+            string mondat = SzovegBeker("Adj meg egy mondatot: ");
+            string[] szavak = mondat.Split(' ');
+
+            Console.WriteLine("A mondat szavai:");
+            foreach (string szo in szavak)
+            {
+                if (!string.IsNullOrWhiteSpace(szo))
+                    Console.WriteLine(szo);
+            }
+        }
+
+        static void f56()
+        {
+            string szo = SzovegBeker("Adj meg egy szót: ");
+            string nagyBetus = szo.ToUpper();
+
+            Console.Write("A szó fordítva, nagybetűkkel: ");
+            for (int i = nagyBetus.Length - 1; i >= 0; i--)
+            {
+                Console.Write(nagyBetus[i]);
+            }
+            Console.WriteLine();
+        }
+
+        static void f57()
+        {
+            string mondat = SzovegBeker("Adj meg egy mondatot: ");
+            string[] szavak = mondat.Split(' ');
+
+            Console.WriteLine("A mondat szavai (első betű nagybetűvel):");
+            foreach (string szo in szavak)
+            {
+                if (!string.IsNullOrWhiteSpace(szo))
+                {
+                    if (szo.Length == 1)
+                        Console.WriteLine(char.ToUpper(szo[0]));
+                    else
+                        Console.WriteLine(char.ToUpper(szo[0]) + szo.Substring(1).ToLower());
+                }
+            }
+        }
 
         static void Main(string[] args)
         {
-            f1();
-            f2();
-            f3();
-            f4();
-            f5();
-            f6();
-            f7();
-            f8();
-            f9();
-            f10();
-            f11();
-            f13();
-            f15();
-            f16();
-            f17();
-            f18();
-            f19();
-            f20();
-            f21();
-            f22();
-            f23();
-            f24();
-            f25();
-            f26();
-            f27();
-            f28();
-            f29();
-            f30();
-            f31();
+            
+            f50();
+            f51();
+            f52();
+            f53();
+            f54();
+            f55();
+            f56();
+            f57();
+
+
+            Console.WriteLine("Minden feladat lefutott. Nyomj meg egy gombot a kilépéshez.");
         }
     }
 }

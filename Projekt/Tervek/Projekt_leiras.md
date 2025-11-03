@@ -8,7 +8,7 @@ A nyitóoldal kiemelt kézműveseket, ajánlott termékeket és kategóriákat j
 
 A kosár funkció lehetővé teszi több kézműves termékeinek együttes megrendelését, intelligens szállítási költség kalkulációval. A regisztrált felhasználók nyomon követhetik rendeléseiket, értékelhetik a termékeket és kedvencek listát kezelhetnek. A kézművesek saját admin felületen keresztül kezelhetik termékeiket, feltölthetnek új termékeket képekkel, kezelhetik készleteket és áttekinthetik rendeléseiket. 
 
-A platform admin felülete lehetővé teszi a felhasználók, kézművesek és termékek moderálását, statisztikák megtekintését és a platform általános beállításainak kezelését. A rendszer automatikus értesítéseket küld emailben a rendelések állapotváltozásairól. A fizetési modul több fizetési módot támogat (bankkártya, PayPal, utánvét), míg a szállítási opciók között szerepel házhoz szállítás és csomagpontok. 
+A platform admin felülete lehetővé teszi a felhasználók, kézművesek és termékek moderálását, statisztikák megtekintését és a platform általános beállításainak kezelését. A rendszer automatikus értesítéseket küld emailben a rendelések állapotváltozásairól. A szállítási opciók között szerepel házhoz szállítás és csomagpontok. 
 
 A kézművesek értékelési rendszere segíti a minőség fenntartását és a bizalom építését. A mobilbarát, reszponzív dizájn biztosítja, hogy az oldal minden eszközön kényelmesen használható legyen. A platform tartalmaz egy blog szekciót is, ahol kézművesek bemutathatják munkájukat és a készítési folyamatokat. A fejlett keresési funkció lehetővé teszi termékek, kézművesek és kategóriák kombinált keresését kulcsszavak alapján.
 

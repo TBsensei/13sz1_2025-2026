@@ -262,31 +262,6 @@ A kézművesek értékelési rendszere segíti a minőség fenntartását és a 
 
 ---
 
-## Technikai megvalósítás szempontjai
-
-### Backend (RESTful API)
-- Node.js + Express / Python + Django / PHP + Laravel
-- JWT alapú autentikáció
-- Role-based access control (User, Artisan, Admin)
-- Adatbázis: MySQL / PostgreSQL / MongoDB
-
-### Frontend
-- React.js / Vue.js / Angular
-- Reszponzív dizájn (Mobile-first)
-- Progressive Web App (PWA) képességek
-- State management (Redux/Vuex/NgRx)
-
-### További funkciók
-- Email értesítések (rendelés, státusz változás)
-- Képfeltöltés és optimalizálás
-- Fizetési gateway integráció (Stripe, PayPal, SimplePay)
-- Google Maps integráció
-- Teljesítmény optimalizálás (caching, CDN)
-- SEO optimalizálás
-- Analytics integráció (Google Analytics)
-
----
-
 ## Összegzés
 
 A Kézműves Kincsek platform egy komplex, teljes körű e-kereskedelmi megoldás, amely három felhasználói szintet szolgál ki: a végfelhasználókat (vásárlókat), a kézműveseket (eladókat) és a platform adminisztrátorokat. A rendszer modern technológiákkal készül, biztosítva a skálázhatóságot, biztonságot és kiváló felhasználói élményt minden eszközön.

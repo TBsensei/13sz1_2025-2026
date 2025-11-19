@@ -1,0 +1,64 @@
+:root {
+    font-family: system-ui, Arial, sans-serif;
+    color-scheme: light dark;
+}
+
+.container {
+    margin: 1rem auto;
+    max-width: 1000px;
+    padding: 0 1rem;
+}
+
+.row {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 240px auto;
+    gap: .5rem;
+}
+
+@media (max-width: 720px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hide-sm {
+        display: none;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: .6rem;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+tr:hover {
+    background: rgba(128, 128, 128, .08);
+}
+button,
+input,
+select{
+    padding: .6rem .8rem;
+}
+.muted{
+    opacity: .75;
+    font-size: .9rem;
+}
+.slug{
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}

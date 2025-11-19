@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Shorty - Frontend</title>
+  </head>
+  <body>
+    <header class="container row space-between">
+      <h1>URL Shorty - Frontend (MVC)</h1>
+      <div class="row">
+        <input type="search" id="search" placeholder="Keresés slug/URL...">
+        <select id="sort">
+          <option value="createdAt">Létrehozva</option>
+          <option value="slug">Slug</option>
+          <option value="clicks">Kattintás</option>
+          <option value="target">Cél URL</option>
+        </select>
+        <select id="dir">
+          <option value="desc">Csökkenö</option>
+          <option value="asc">Növekvő</option>
+        </select>
+        <button id="refresh">Frissités</button>
+      </div>
+    </header>
+    <main class="container">
+      <section>
+        <form id="create-form" autocomplete="off" class="grid">
+          <input id="target" type="url" placeholder="Cél URL (https://...)" required>
+          <input id="custom-slug" type="text" placeholder="Egyedi slug (opcionális)">
+          <button type="submit">Rövidítés</button>
+        </form>
+      </section>
+      <section>
+        <table>
+          <thead>
+          <tr>
+            <th>Slug</th>
+            <th class="hide-sm">Rövid link</th>
+            <th>Cél URL</th>
+            <th>Katt.</th>
+            <th>Műveletek</th>
+          </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </section>
+    </main>
+    <footer class="container muted"> APi alap: <code id="apiBase"></code></footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

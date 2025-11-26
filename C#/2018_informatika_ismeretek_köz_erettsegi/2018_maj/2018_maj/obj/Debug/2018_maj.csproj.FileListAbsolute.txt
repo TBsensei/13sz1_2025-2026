@@ -1,0 +1,8 @@
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2018_maj\2018_maj\bin\Debug\2018_maj.exe.config
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2018_maj\2018_maj\bin\Debug\2018_maj.exe
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2018_maj\2018_maj\bin\Debug\2018_maj.pdb
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2018_maj\2018_maj\obj\Debug\2018_maj.csproj.AssemblyReference.cache
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2018_maj\2018_maj\obj\Debug\2018_maj.csproj.CoreCompileInputs.cache
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2018_maj\2018_maj\obj\Debug\2018_maj.exe
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2018_maj\2018_maj\obj\Debug\2018_maj.pdb
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2018_maj\2018_maj\obj\Debug\2018_maj.exe.config

@@ -1,0 +1,103 @@
+{
+  "info": {
+    "name": "Gitárművészek REST API",
+    "_postman_id": "gitar-api-collection",
+    "description": "REST API a gitárművészek adatbázis kezeléséhez",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Swing stílus törlése",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"stilusNev\": \"swing\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost/gitar/api.php?action=delete_swing",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["gitar", "api.php"],
+          "query": [{"key": "action", "value": "delete_swing"}]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2. Joe Bonamassa hozzáadása",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"muveszNev\": \"Joe Bonamassa\",\n    \"stilusID\": 1,\n    \"nemzetiseg\": \"amerikai\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost/gitar/api.php?action=create_muvesz",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["gitar", "api.php"],
+          "query": [{"key": "action", "value": "create_muvesz"}]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3. Zenekarok száma",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/gitar/api.php?action=count_zenekar",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["gitar", "api.php"],
+          "query": [{"key": "action", "value": "count_zenekar"}]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "4. Művészek száma stílusonként",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/gitar/api.php?action=stats_by_stilus",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["gitar", "api.php"],
+          "query": [{"key": "action", "value": "stats_by_stilus"}]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "5. Összes művész listázása",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/gitar/api.php?action=list_muvesz",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["gitar", "api.php"],
+          "query": [{"key": "action", "value": "list_muvesz"}]
+        }
+      },
+      "response": []
+    }
+  ]
+}

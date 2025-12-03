@@ -1,0 +1,64 @@
+1	1	7	atletika	kalapacsvetes
+1	1	7	uszas	400m gyorsuszas
+1	1	7	birkozas	kotott fogas legsuly
+1	1	7	torna	talajtorna
+1	1	7	torna	felemas korlat
+1	1	7	vivas	kardvivas egyeni
+1	1	7	okolvivas	nagyvaltosuly
+1	1	7	uszas	200m melluszas
+1	1	7	birkozas	kotott fogas valtosuly
+1	1	7	uszas	100m gyorsuszas
+1	1	7	sportloveszet	onmukodo sportpisztoly
+1	15	105	labdarugas	ferfi csapat
+1	3	21	ottusa	ferfi csapat
+1	6	42	vivas	kardvivas csapat
+1	5	35	uszas	4x100m gyorsuszo valto
+1	13	91	vizilabda	ferfi csapat
+2	1	5	ottusa	ottusa egyeni
+2	1	5	vivas	torvivas egyeni
+2	1	5	vivas	kardvivas egyeni
+2	1	5	sportloveszet	onmukodo sportpisztoly
+2	1	5	uszas	400m gyorsuszas
+2	1	5	uszas	200m melluszas
+2	1	5	kajakkenu	kenu egyes 10000m
+2	1	5	kajakkenu	kajak egyes 1000m
+2	1	5	birkozas	kotott fogas pehelysuly
+2	8	40	torna	noi osszetett csapat
+3	1	4	sportloveszet	sportpisztoly
+3	1	4	vivas	kardvivas egyeni
+3	1	4	atletika	tavolugras
+3	1	4	birkozas	szabad fogas kozepsuly
+3	1	4	torna	felemas korlat
+3	1	4	torna	osszetett egyeni
+3	1	4	torna	gerenda
+3	1	4	torna	talajtorna
+3	1	4	atletika	kalapacsvetes
+3	1	4	atletika	50km gyaloglas
+3	1	4	ottusa	ottusa egyeni
+3	1	4	uszas	100m gyorsuszas
+3	4	16	atletika	4x100m valtofutas
+3	2	8	kajakkenu	kenu kettes 10000m
+3	8	32	torna	keziszer csapat
+3	6	24	vivas	torvivas csapat
+4	1	3	torna	gerenda
+4	1	3	uszas	200m mell
+4	1	3	birkozas	kotottfogas felnehezsuly
+4	1	3	torna	talaj
+4	1	3	birkozas	kotottfogas kozepsuly
+4	1	3	birkozas	kotottfogas konnyusuly
+5	1	2	okolvivas	pehelysuly
+5	1	2	okolvivas	konnyusuly
+5	1	2	uszas	100m gyors
+5	1	2	atletika	diszkoszvetes
+5	1	2	vivas	parbajtor egyeni
+5	2	4	kajak�kenu	kenu kettes 1000m
+5	2	4	kerekparozas	ketuleses verseny
+5	4	8	uszas	4�200m gyorsvalto
+5	5	10	vivas	parbajtor csapat
+6	1	1	birkozas	kotottfogas legsuly
+6	1	1	kajak�kenu	kajak egyes 500m
+6	1	1	torna	osszetett egyeni
+6	1	1	kerekparozas	repuloverseny
+6	1	1	uszas	400m gyors
+6	1	1	torna	felemaskorlat
+6	8	8	torna	osszetett csapat

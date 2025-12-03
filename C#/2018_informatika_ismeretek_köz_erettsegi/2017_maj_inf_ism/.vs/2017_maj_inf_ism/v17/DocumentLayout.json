@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tothb\\Documents\\GitHub\\13sz1_2025-2026\\C#\\2018_informatika_ismeretek_k\u00F6z_erettsegi\\2017_maj_inf_ism\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{906698CF-CFED-4D01-9DCD-7BBF5CD85ED2}|2017_maj_inf_ism\\2017_maj_inf_ism.csproj|c:\\users\\tothb\\documents\\github\\13sz1_2025-2026\\c#\\2018_informatika_ismeretek_k\u00F6z_erettsegi\\2017_maj_inf_ism\\2017_maj_inf_ism\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{906698CF-CFED-4D01-9DCD-7BBF5CD85ED2}|2017_maj_inf_ism\\2017_maj_inf_ism.csproj|solutionrelative:2017_maj_inf_ism\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tothb\\Documents\\GitHub\\13sz1_2025-2026\\C#\\2018_informatika_ismeretek_k\u00F6z_erettsegi\\2017_maj_inf_ism\\2017_maj_inf_ism\\Program.cs",
+              "RelativeDocumentMoniker": "2017_maj_inf_ism\\Program.cs",
+              "ToolTip": "C:\\Users\\tothb\\Documents\\GitHub\\13sz1_2025-2026\\C#\\2018_informatika_ismeretek_k\u00F6z_erettsegi\\2017_maj_inf_ism\\2017_maj_inf_ism\\Program.cs",
+              "RelativeToolTip": "2017_maj_inf_ism\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T13:56:58.645Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

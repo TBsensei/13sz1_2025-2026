@@ -1,0 +1,7 @@
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2017_maj_inf_ism\2017_maj_inf_ism\bin\Debug\2017_maj_inf_ism.exe.config
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2017_maj_inf_ism\2017_maj_inf_ism\bin\Debug\2017_maj_inf_ism.exe
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2017_maj_inf_ism\2017_maj_inf_ism\bin\Debug\2017_maj_inf_ism.pdb
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2017_maj_inf_ism\2017_maj_inf_ism\obj\Debug\2017_maj_inf_ism.csproj.AssemblyReference.cache
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2017_maj_inf_ism\2017_maj_inf_ism\obj\Debug\2017_maj_inf_ism.csproj.CoreCompileInputs.cache
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2017_maj_inf_ism\2017_maj_inf_ism\obj\Debug\2017_maj_inf_ism.exe
+C:\Users\tothb\Documents\GitHub\13sz1_2025-2026\C#\2018_informatika_ismeretek_köz_erettsegi\2017_maj_inf_ism\2017_maj_inf_ism\obj\Debug\2017_maj_inf_ism.pdb

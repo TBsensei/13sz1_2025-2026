@@ -1,8 +1,4 @@
-Ez egy remek ötlet! Egy GitHub projekt önmagában nem működik ("halott kód"), amíg a csapattársaid nem telepítik a függőségeket és nem állítják be a saját gépükön.
 
-Itt egy **"README" stílusú gyorstalpaló**, amit elküldhetsz nekik, vagy bemásolhatsz a GitHubon a `README.md` fájlba.
-
----
 
 # 🚀 Hogyan futtasd a Hírportál Projektet a saját gépeden?
 

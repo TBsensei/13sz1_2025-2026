@@ -1,0 +1,55 @@
+﻿<Window x:Class="todo_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:todo_wpf"
+        Title="ToDo App" Height="450" Width="400">
+
+    <Window.Resources>
+        <Style x:Key="BaseMargin" TargetType="{x:Type FrameworkElement}">
+            <Setter Property="Margin" Value="2.5"/>
+        </Style>
+        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BaseMargin}"/>
+        <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseMargin}"/>
+        <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseMargin}"/>
+        <Style TargetType="{x:Type ListBox}" BasedOn="{StaticResource BaseMargin}"/>
+    </Window.Resources>
+
+    <Grid Margin="2.5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Keresés" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" x:Name="TB_Search" TextChanged="TB_Search_TextChanged" />
+            <Button Grid.Column="2" Content="X" Width="20" Height="20" Click="BTN_ClearSearch_Click" />
+        </Grid>
+
+        <ListBox Grid.Row="1" x:Name="LB" HorizontalContentAlignment="Stretch" SelectionChanged="LB_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="{x:Type local:ToDoItem}">
+                    <CheckBox IsChecked="{Binding IsCompleted}" Content="{Binding Description}" Click="CheckBox_Click" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <TextBox Grid.Row="2" x:Name="TB_Editor" />
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Mentés" Click="BtnAdd_Click" />
+            <Button Grid.Column="1" Content="Törlés" Click="BtnDelete_Click" />
+        </Grid>
+    </Grid>
+</Window>

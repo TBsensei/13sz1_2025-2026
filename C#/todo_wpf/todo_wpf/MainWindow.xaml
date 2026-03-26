@@ -4,17 +4,7 @@
         xmlns:local="clr-namespace:todo_wpf"
         Title="ToDo App" Height="450" Width="400">
 
-    <Window.Resources>
-        <Style x:Key="BaseMargin" TargetType="{x:Type FrameworkElement}">
-            <Setter Property="Margin" Value="2.5"/>
-        </Style>
-        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BaseMargin}"/>
-        <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseMargin}"/>
-        <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseMargin}"/>
-        <Style TargetType="{x:Type ListBox}" BasedOn="{StaticResource BaseMargin}"/>
-    </Window.Resources>
-
-    <Grid Margin="2.5">
+    <Grid Margin="5">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="1*" />
@@ -22,34 +12,37 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Grid>
+        <Grid Grid.Row="0" Margin="0,0,0,5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <TextBlock Text="Keresés" VerticalAlignment="Center" />
-            <TextBox Grid.Column="1" x:Name="TB_Search" TextChanged="TB_Search_TextChanged" />
-            <Button Grid.Column="2" Content="X" Width="20" Height="20" Click="BTN_ClearSearch_Click" />
+            <TextBlock Text="Keresés:" VerticalAlignment="Center" Margin="0,0,5,0" />
+            <TextBox Grid.Column="1" x:Name="TB_Search" TextChanged="TB_Search_TextChanged" VerticalAlignment="Center" />
+            <Button Grid.Column="2" Content="X" Width="25" Click="BTN_ClearSearch_Click" Margin="5,0,0,0" />
         </Grid>
 
-        <ListBox Grid.Row="1" x:Name="LB" HorizontalContentAlignment="Stretch" SelectionChanged="LB_SelectionChanged">
+        <ListBox Grid.Row="1" x:Name="LB" SelectionChanged="LB_SelectionChanged" Margin="0,0,0,5">
             <ListBox.ItemTemplate>
                 <DataTemplate DataType="{x:Type local:ToDoItem}">
-                    <CheckBox IsChecked="{Binding IsCompleted}" Content="{Binding Description}" Click="CheckBox_Click" />
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding IsCompleted}" VerticalAlignment="Center" />
+                        <TextBlock Text="{Binding Description}" VerticalAlignment="Center" Margin="5,0,0,0" />
+                    </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <TextBox Grid.Row="2" x:Name="TB_Editor" />
+        <TextBox Grid.Row="2" x:Name="TB_Editor" Margin="0,0,0,5" />
 
         <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
-            <Button Grid.Column="0" Content="Mentés" Click="BtnAdd_Click" />
-            <Button Grid.Column="1" Content="Törlés" Click="BtnDelete_Click" />
+            <Button Grid.Column="0" Content="Mentés" Click="BTN_Save_Click" Margin="0,0,2.5,0" />
+            <Button Grid.Column="1" Content="Törlés" Click="BTN_Delete_Click" Margin="2.5,0,0,0" />
         </Grid>
     </Grid>
 </Window>

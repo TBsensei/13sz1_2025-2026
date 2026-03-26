@@ -11,7 +11,7 @@ namespace todo_wpf
             InitializeComponent();
         }
 
-        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+        private void BTN_Save_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(TB_Editor.Text))
             {
@@ -19,6 +19,7 @@ namespace todo_wpf
             }
 
             var selected = (ToDoItem)LB.SelectedItem;
+
             if (selected is null)
             {
                 var item = new ToDoItem();
@@ -29,15 +30,19 @@ namespace todo_wpf
             {
                 selected.Description = TB_Editor.Text;
                 LB.Items.Refresh();
-                LB.SelectedValue = null;
+                LB.SelectedItem = null;
             }
+
             TB_Editor.Clear();
-            
         }
 
-        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        private void BTN_Delete_Click(object sender, RoutedEventArgs e)
         {
-            LB.Items.Remove(LB.SelectedItem);
+            if (LB.SelectedItem != null)
+            {
+                LB.Items.Remove(LB.SelectedItem);
+                TB_Editor.Clear();
+            }
         }
 
         private void LB_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -46,22 +51,14 @@ namespace todo_wpf
             TB_Editor.Text = selected is null ? string.Empty : selected.Description;
         }
 
-        private void CheckBox_Click(object sender, RoutedEventArgs e)
-        {
-            var items = LB.Items.Cast<ToDoItem>().OrderBy(i => i.IsCompleted).ToList();
-            LB.Items.Clear();
-            foreach (var item in items)
-            {
-                LB.Items.Add(item);
-            }
-        }
-
         private void TB_Search_TextChanged(object sender, TextChangedEventArgs e)
         {
             string filter = TB_Search.Text.ToLower();
+
             foreach (ToDoItem item in LB.Items)
             {
                 var container = LB.ItemContainerGenerator.ContainerFromItem(item) as FrameworkElement;
+
                 if (container != null)
                 {
                     if (item.Description.ToLower().Contains(filter))

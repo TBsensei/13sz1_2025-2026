@@ -1,0 +1,56 @@
+
+  /* --- ALAPBEÁLLÍTÁSOK --- */
+body {
+    /* Az oldal háttérszíne */
+    background-color: #FFF8E1;
+    /* Betűtípus gyűjtemény */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Alap betűméret */
+    font-size: 1rem;
+}
+
+/* Kártyában lévő gomb hover (egér fölé vitel) effektusa */
+.card .btn:hover {
+    background-color: #007bff; /* Gomb kék háttérszíne */
+    color: #ffffff;            /* Gomb fehér betűszíne */
+}
+
+
+/* --- MOBIL NÉZET (Weboldal szélessége 768px alatt van) --- */
+@media (max-width: 767px) {
+    body {
+        /* Háttérszín világoskékre cserélése */
+        background-color: #E0F7FA;
+        /* Alapbetűméret az eredeti 90%-a (1rem * 0.9 = 0.9rem) */
+        font-size: 0.9rem;
+    }
+    
+    .card {
+        /* Kártya szövegének középre igazítása */
+        text-align: center;
+    }
+    
+    .card-body {
+        /* Kártya belső térközének (padding) 10px-re állítása */
+        padding: 10px;
+    }
+}
+
+
+/* --- ASZTALI NÉZET (Weboldal szélessége meghaladja a 992px értéket) --- */
+@media (min-width: 993px) {
+    body {
+        /* Háttérszín világoszöldre cserélése */
+        background-color: #E8F5E9;
+    }
+    
+    p {
+        /* Bekezdések betűmérete az eredeti 110%-a (1rem * 1.1 = 1.1rem) */
+        font-size: 1.1rem;
+    }
+    
+    .card {
+        /* Külső margó: alul-felül 20px, oldalt 0 egység */
+        margin: 20px 0;
+    }
+}
